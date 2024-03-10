@@ -1,4 +1,4 @@
-#include "math_hpp"
+#include "math.hpp"
 
 int main ()
 {
@@ -17,7 +17,7 @@ int main ()
         std::cout << "error, invalid number";
     }
 
-    std::cout << "enter command ("1" for addition, "2" for num1 - num2, "3" for multiplication, "4" for num1/num2, 5 for num1^num2): " << std::endl;
+    std::cout << "enter command: 1 for addition, 2 for num1 - num2, 3 for multiplication, 4 for num1/num2, 5 for num1 to power num2 " << std::endl;
     std::cin >> cmd;
 
     if (cmd == 1)
@@ -27,7 +27,7 @@ int main ()
     else if (cmd == 3)
         mult(num1, num2);
     else if (cmd == 4)
-        div(num1, num2);
+        division(num1, num2);
     else if (cmd == 5)
         to_power(num1, num2);
     else

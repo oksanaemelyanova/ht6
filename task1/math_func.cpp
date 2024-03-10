@@ -1,4 +1,4 @@
-#include "math_hpp"
+#include "math.hpp"
 
 void add(int a, int b)
 {
@@ -18,7 +18,7 @@ void mult(int a, int b)
     std::cout << "num1 * num2 = " << result << std::endl;
 }
 
-void div(int a, int b)
+void division(int a, int b)
 {
     int result = a / b;
     std::cout << "num1 / num2 = " << result << std::endl;

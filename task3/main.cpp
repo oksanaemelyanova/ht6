@@ -5,6 +5,9 @@
 #include "EquilateralTriangle.hpp"
 #include "Quadrilateral.hpp"
 #include "Parallelogram.hpp"
+#include "Rectangle.hpp"
+#include "Square.hpp"
+#include "Rhombus.hpp"
 
 int main(void) {
     Figure* f1 = new Figure();
@@ -28,9 +31,18 @@ int main(void) {
     Figure* p = new Parallelogram(5, 6, 5, 6, 100, 80, 100, 80);
     p->printInfo();
 
+    Figure* r1 = new Rectangle(99, 77);
+    r1->printInfo();
+
+    Figure* sq = new Square(87);
+    sq->printInfo();
+
+    Figure* rm = new Rhombus(66, 100, 80);
+    rm->printInfo();
+
     delete f1;
     delete tr1;
-    delete st1, it1, eq1, qq1, p;
+    delete st1, it1, eq1, qq1, p, r1, sq, rm;
 
     return 0;
 }
